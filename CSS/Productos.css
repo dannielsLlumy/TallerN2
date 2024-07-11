@@ -1,0 +1,173 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.add-to-cart {
+    background-color: #ff5733;
+    border: none;
+}
+
+.add-to-cart:hover {
+    background-color: #c44520;
+}
+
+.fixed-top {
+    z-index: 1030;
+}
+
+#cart-count {
+    margin-left: 5px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff5733;
+    border-radius: 50%;
+    padding: 2px 8px;
+}
+
+.tienda-online-title {
+    color: #ff5733;
+    font-weight: bold;
+}
+
+
+/* Footer y personalización con CSS */
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: dimgray;
+    padding: 80px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: calc(20% - 10px); 
+    padding: 0 10px; 
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid aqua;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 15px;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: antiquewhite;
+    display: block;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: aliceblue;
+    padding-left: 6px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    gap: 10px; 
+}
+
+.social-links img {
+    width: 60px; 
+    height: 30px; 
+    background: none; 
+}
+
+@media(max-width: 991px) {
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+    }
+}
+
+/*Esto es para poder establecer algún color de fondo y para que la barra de navegación te siga*/
+
+.mi-navbar {
+    background-color: whitesmoke;
+}
+
+nav {
+    background-color: whitesmoke;
+}
+
+/*Algún estilo para la barra de navegación fija*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*Ajuste del contenido para que no quede oculto detrás de la barra de navegación*/
+
+body {
+    padding-top: 70px; 
+}
+
+#cart-icon {
+    position: relative;
+    display: inline-block;
+    color: #333;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+/* Estilo para el contador de artículos en el carrito */
+#cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    font-size: 12px;
+    font-weight: bold;
+    min-width: 18px;
+    height: 18px;
+    line-height: 18px;
+    border-radius: 50%;
+    text-align: center;
+}
